@@ -1,0 +1,29 @@
+---
+title: Working with Containers
+sidebar:
+  order: 4
+---
+
+# Working With Containers
+
+
+<Aside type="note" title="Prequisites">
+- Ensure you have read and understood [introduction](../introduction).
+- Ensure you can use the [Glossary](../glossary) to look after foreign terms.
+</Aside>
+
+## Working with Podman
+
+Containers under the control of Podman can either be run by root or by a non-privileged user. Podman manages the entire container ecosystem which includes pods, containers, container images, and container volumes using the libpod library. Podman, by default, creates rootless containers.
+
+### Managing a container
+
+To manage a container, the order should be basically as follows,
+
+- search the image
+- pull the image
+- Create a container
+- Start the container
+- Open a shell that can access the container
+
+Before diving into to managing and accessing containers, have a look at [system setup](setup)

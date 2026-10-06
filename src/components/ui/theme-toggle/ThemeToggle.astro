@@ -1,0 +1,42 @@
+---
+import Icon from "@cloudflare/nimbus-docs/components/Icon.astro";
+import { cn } from "@/lib/cn";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"button"> {}
+
+const { class: className, ...attrs } = Astro.props;
+---
+
+<button
+    data-nb-theme-toggle
+    class={cn(
+        "group flex items-center justify-center w-8 h-8 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors",
+        className,
+    )}
+    {...attrs}
+    aria-label="Toggle theme"
+    data-nb-state="system"
+>
+    <!-- Show Sun Icon only when explicitly set to light -->
+    <Icon
+        name="ph:sun"
+        class="w-[1.125rem] h-[1.125rem] hidden group-data-[nb-state=light]:block"
+    />
+
+    <!-- Show Moon Icon only when explicitly set to dark -->
+    <Icon
+        name="ph:moon"
+        class="w-[1.125rem] h-[1.125rem] hidden group-data-[nb-state=dark]:block"
+    />
+
+    <!-- Show Laptop/System Icon when syncing with OS -->
+    <Icon
+        name="ph:desktop"
+        class="w-[1.125rem] h-[1.125rem] hidden group-data-[nb-state=system]:block"
+    />
+</button>
+
+<script>
+    import "./theme-toggle.client";
+</script>
