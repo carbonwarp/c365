@@ -1,4 +1,4 @@
-# <img src="public/favicon.svg" width="40" alt="C365 logo"> C365
+# <img src="public/favicon.svg" width="30" alt="C365 logo"> C365
 
 ## Carbonwarp C365
 
@@ -12,7 +12,7 @@ The project is divided into learning tracks for people who want to **use contain
 
 C365 is a relatively new project and is continuously being expanded. Contributions, corrections, examples, and new learning material are greatly appreciated.
 
-The current material focuses primarily on RPM-based Linux hosts and Podman containers. While the concepts are intended to be useful across Linux distributions, it is recommended to use a system configured according to the [setup guide](https://c365.carbonwarp.com/setup).
+The current material focuses primarily on RPM-based Linux hosts and Podman containers. While the concepts are intended to be useful across Linux distributions, it is recommended to use a system configured according to the [setup guide](https://c365.carbonwarp.com/containers/setup/).
 
 ## Learning Tracks
 
